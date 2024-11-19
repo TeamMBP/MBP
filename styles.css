@@ -8,6 +8,7 @@ body {
     background-position: center; /* Centra la imagen */
     background-attachment: fixed; /* Hace que la imagen de fondo no se mueva al hacer scroll */
     color: white;
+    padding-bottom: 100px; /* Añadir un pequeño margen inferior para el desplazamiento */
 }
 
 .container {
@@ -98,7 +99,24 @@ body {
     background-color: #0056b3;
 }
 
-/* Añadir un pequeño margen inferior en el body para el desplazamiento */
+/* Fondo parallax */
 body {
-    padding-bottom: 100px;
+    background-image: url('images/fondo.jpg'); /* Cambia 'fondo.jpg' por el nombre de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Hace que la imagen de fondo no se mueva al hacer scroll */
+}
+
+/* Para asegurar que el fondo no se mueva de forma errónea */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/fondo.jpg'); /* Cambia 'fondo.jpg' por la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Asegura que el fondo esté detrás del contenido */
 }
