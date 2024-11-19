@@ -8,3 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.btn-flip');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            alert('https://discord.gg/zggXydNXnU');
+        });
+    });
+});
