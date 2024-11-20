@@ -18,23 +18,34 @@
         </div>
     </header>
 
+    <!-- Song Section -->
+    <div class="song">
+        <h2>Song</h2>
+        <audio id="audio-player" src="songs\season8.mp3" autoplay></audio>
+        <button id="play-button">Pause</button>
+        <div class="volume-control">
+            <label for="volume-slider">Volumen:</label>
+            <input id="volume-slider" type="range" min="0" max="1" step="0.01" value="0.5">
+        </div>
+    </div>
+
     <section id="products" class="products-section">
         <h2>Nuestros Productos</h2>
         <div class="products">
             <div class="product">
-                <img src="images\maxresdefault.jpg" alt="Producto 1">
+                <img src="images/maxresdefault.jpg" alt="Producto 1">
                 <h3>Swapper multi plataforma</h3>
                 <p class="price">4,99€</p>
                 <button class="btn-add-to-cart">Añadir al carrito</button>
             </div>
             <div class="product">
-                <img src="images\CuentaExclusiva.png" alt="Producto 2">
+                <img src="images/CuentaExclusiva.png" alt="Producto 2">
                 <h3>Cuentas OG random</h3>
                 <p class="price">35.00€</p>
                 <button class="btn-add-to-cart">Añadir al carrito</button>
             </div>
             <div class="product">
-                <img src="images\descuentos-exclusivos.png" alt="Producto 3">
+                <img src="images/descuentos-exclusivos.png" alt="Producto 3">
                 <h3>Descuentos exclusivos</h3>
                 <p class="price">Boostear server de Discord</p>
                 <button class=".btn-flip">Añadir al carrito</button>
@@ -46,12 +57,12 @@
         <h2>Ofertas Especiales</h2>
         <div class="offers">
             <div class="offer">
-                <img src="images\renegade.webp" alt="Oferta 1">
+                <img src="images/renegade.webp" alt="Oferta 1">
                 <h3>Swapper multi plataforma</h3>
                 <p>¡Swapper multiplataforma para cambiar (skin, mochila, pico, bailes, etc)!</p>
             </div>
             <div class="offer">
-                <img src="images\ofertados.png" alt="Oferta 2">
+                <img src="images/ofertados.png" alt="Oferta 2">
                 <h3>Cuentas OG random</h3>
                 <p>Cuenta aleatoria, te pude tocar cualquier skin de las que hay arriba de la imagen.</p>
             </div>
@@ -61,4 +72,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
