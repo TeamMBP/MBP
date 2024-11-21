@@ -290,3 +290,17 @@ body {
     width: 100%;
     margin-top: 5px;
 }
+
+.discord-btn {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.discord-icon {
+    width: 39px;
+    height: 32px;
+}
+
+.discord-btn:hover .discord-icon {
+    filter: brightness(1.2);
+}
